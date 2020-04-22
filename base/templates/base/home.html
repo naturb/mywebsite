@@ -1,0 +1,87 @@
+{% load static %}
+<!--
+<h3>Hello world</h3>
+
+<img src="{% static 'images/2.jpg' %}" >
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Hi, I'm Natalia</title>
+    <link  href ="{%static '/css/main.css' %}" rel = "stylesheet" type = "text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body" id="profile-wrapper">
+                    <img id="profile-pic" src="{ % static 'images/1.jpg' % }" >
+                    <hr>
+                    <h4> Hi, I'm Natalia </h4>
+                        <p> I'd like to introduce myself.</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-body">
+                    <h4>Something about me</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce rhoncus quam id ante mollis, vel feugiat augue auctor.
+                        Fusce varius sapien magna, a faucibus dui pulvinar vel.
+                        Donec posuere semper velit sit amet porttitor.
+                        Sed euismod diam mauris, ut ultrices enim egestas vitae.
+                        Cras ut diam semper, consequat magna ac, sagittis turpis.
+                        Duis hendrerit urna vel libero suscipit, placerat pulvinar diam elementum.
+                        Praesent pharetra ex vel dolor porta euismod. Vivamus et rhoncus dolor, lobortis cursus quam.
+                        Ut volutpat velit sit amet lectus iaculis, id tristique enim lacinia. </p>
+
+                    <ul class="social-links">
+                        <li><img class="social" src="{% static 'staticfiles/f.jpg' %}"> </li>
+                        <li><img class="social" src="{% static 'staticfiles/i.jpeg' %}"> </li>
+                        <li><img class="social" src="{% static 'staticfiles/l.jpeg' %}"> </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body">
+                    <hr>
+                    <p>Hobby</p>
+                    <ul class="hobby-img">
+                        <img id="hobby" src="{ % static 'images/p.png' % }" >
+                        <img id="hobby" src="{ % static 'images/bieg.jpeg' % }" >
+                        <img id="hobby" src="{ % static 'images/l.png' % }" >
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body">
+                    <hr>
+                    <p>Technology</p>
+                    <ul class="tech-img">
+                        <img id="tech" src="{ % static 'images/index.png' % }" >
+                        <img id="tech" src="{ % static 'images/index2.png' % }" >
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
